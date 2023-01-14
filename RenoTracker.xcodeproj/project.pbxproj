@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE705E6C296C6F8D0031D71F /* RenovationProjectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE705E6B296C6F8D0031D71F /* RenovationProjectRow.swift */; };
+		CE705E6E296C85870031D71F /* RenovationProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE705E6D296C85870031D71F /* RenovationProjectsView.swift */; };
 		CE7D5736296AED4300D13497 /* RenoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D5735296AED4300D13497 /* RenoTrackerApp.swift */; };
 		CE7D5738296AED4300D13497 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D5737296AED4300D13497 /* ContentView.swift */; };
 		CE7D573A296AED4400D13497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7D5739296AED4400D13497 /* Assets.xcassets */; };
@@ -14,6 +16,13 @@
 		CE7D5748296AED4400D13497 /* RenoTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D5747296AED4400D13497 /* RenoTrackerTests.swift */; };
 		CE7D5752296AED4400D13497 /* RenoTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D5751296AED4400D13497 /* RenoTrackerUITests.swift */; };
 		CE7D5754296AED4400D13497 /* RenoTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D5753296AED4400D13497 /* RenoTrackerUITestsLaunchTests.swift */; };
+		CE7D5763296AF0E200D13497 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D5762296AF0E200D13497 /* DetailView.swift */; };
+		CEE2971B29730792008B3A88 /* RenovationProjectsPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2971A29730792008B3A88 /* RenovationProjectsPublisher.swift */; };
+		CEE2971E29730C29008B3A88 /* RenovationProjectDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2971D29730C29008B3A88 /* RenovationProjectDataService.swift */; };
+		CEE2972129730C60008B3A88 /* RenovationProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2972029730C60008B3A88 /* RenovationProject.swift */; };
+		CEE2972529731079008B3A88 /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = CEE2972429731079008B3A88 /* projects.json */; };
+		CEE2972729732B8F008B3A88 /* RenovationProjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2972629732B8F008B3A88 /* RenovationProjectExtensions.swift */; };
+		CEE29729297342F2008B3A88 /* PunchListItemExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE29728297342F2008B3A88 /* PunchListItemExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE705E6B296C6F8D0031D71F /* RenovationProjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProjectRow.swift; sourceTree = "<group>"; };
+		CE705E6D296C85870031D71F /* RenovationProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProjectsView.swift; sourceTree = "<group>"; };
 		CE7D5732296AED4300D13497 /* RenoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7D5735296AED4300D13497 /* RenoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenoTrackerApp.swift; sourceTree = "<group>"; };
 		CE7D5737296AED4300D13497 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +56,13 @@
 		CE7D574D296AED4400D13497 /* RenoTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RenoTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7D5751296AED4400D13497 /* RenoTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenoTrackerUITests.swift; sourceTree = "<group>"; };
 		CE7D5753296AED4400D13497 /* RenoTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenoTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE7D5762296AF0E200D13497 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CEE2971A29730792008B3A88 /* RenovationProjectsPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProjectsPublisher.swift; sourceTree = "<group>"; };
+		CEE2971D29730C29008B3A88 /* RenovationProjectDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProjectDataService.swift; sourceTree = "<group>"; };
+		CEE2972029730C60008B3A88 /* RenovationProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProject.swift; sourceTree = "<group>"; };
+		CEE2972429731079008B3A88 /* projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = projects.json; sourceTree = "<group>"; };
+		CEE2972629732B8F008B3A88 /* RenovationProjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProjectExtensions.swift; sourceTree = "<group>"; };
+		CEE29728297342F2008B3A88 /* PunchListItemExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchListItemExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +113,17 @@
 		CE7D5734296AED4300D13497 /* RenoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CEE2971F29730C44008B3A88 /* Models */,
+				CEE2971C29730C12008B3A88 /* Data */,
+				CEE2971929730771008B3A88 /* Publishers */,
 				CE7D5735296AED4300D13497 /* RenoTrackerApp.swift */,
 				CE7D5737296AED4300D13497 /* ContentView.swift */,
 				CE7D5739296AED4400D13497 /* Assets.xcassets */,
 				CE7D573B296AED4400D13497 /* RenoTracker.entitlements */,
 				CE7D573C296AED4400D13497 /* Preview Content */,
+				CE7D5762296AF0E200D13497 /* DetailView.swift */,
+				CE705E6B296C6F8D0031D71F /* RenovationProjectRow.swift */,
+				CE705E6D296C85870031D71F /* RenovationProjectsView.swift */,
 			);
 			path = RenoTracker;
 			sourceTree = "<group>";
@@ -127,6 +151,33 @@
 				CE7D5753296AED4400D13497 /* RenoTrackerUITestsLaunchTests.swift */,
 			);
 			path = RenoTrackerUITests;
+			sourceTree = "<group>";
+		};
+		CEE2971929730771008B3A88 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2971A29730792008B3A88 /* RenovationProjectsPublisher.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
+		CEE2971C29730C12008B3A88 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2972429731079008B3A88 /* projects.json */,
+				CEE2971D29730C29008B3A88 /* RenovationProjectDataService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CEE2971F29730C44008B3A88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2972029730C60008B3A88 /* RenovationProject.swift */,
+				CEE2972629732B8F008B3A88 /* RenovationProjectExtensions.swift */,
+				CEE29728297342F2008B3A88 /* PunchListItemExtensions.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7D573E296AED4400D13497 /* Preview Assets.xcassets in Resources */,
+				CEE2972529731079008B3A88 /* projects.json in Resources */,
 				CE7D573A296AED4400D13497 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7D5763296AF0E200D13497 /* DetailView.swift in Sources */,
+				CE705E6E296C85870031D71F /* RenovationProjectsView.swift in Sources */,
+				CE705E6C296C6F8D0031D71F /* RenovationProjectRow.swift in Sources */,
+				CEE2971E29730C29008B3A88 /* RenovationProjectDataService.swift in Sources */,
+				CEE2971B29730792008B3A88 /* RenovationProjectsPublisher.swift in Sources */,
 				CE7D5738296AED4300D13497 /* ContentView.swift in Sources */,
+				CEE2972729732B8F008B3A88 /* RenovationProjectExtensions.swift in Sources */,
+				CEE29729297342F2008B3A88 /* PunchListItemExtensions.swift in Sources */,
+				CEE2972129730C60008B3A88 /* RenovationProject.swift in Sources */,
 				CE7D5736296AED4300D13497 /* RenoTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

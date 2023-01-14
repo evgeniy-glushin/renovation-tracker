@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct RenoTrackerApp: App {
+    private var projectsPublisher = RenovationProjectsPublisher()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RenovationProjectsView(projectsPublisher: projectsPublisher)
         }
     }
 }
