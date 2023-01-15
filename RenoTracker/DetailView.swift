@@ -1,13 +1,17 @@
 
 import SwiftUI
+import Combine
 
 struct DetailView: View {
     @Binding var renovationProject: RenovationProject
+    @State private var showingEditView = false
+    private let editPublisher = PassthroughSubject<RenovationProject, Never>()
     
     var body: some View {
         VStack (alignment: .leading) {
+            //Text(str)
             Header(renovationProject: renovationProject)
-            
+           
             WorkQuility(renovationProject: renovationProject)
             
             PunchList(renovationProject: renovationProject)
@@ -17,9 +21,33 @@ struct DetailView: View {
             Budget(renovationProject: renovationProject)
         }.navigationTitle("Front Lobby")
          .padding()
+         .navigationBarItems(trailing: Button(action: {
+             showingEditView = true
+         }, label: {
+             Text("Edit")
+         }))
+         .sheet(isPresented: $showingEditView, content: {
+             NavigationStack {
+                 EditView(renovationProject: $renovationProject, editPublisher: editPublisher)
+                     .navigationBarItems(
+                         leading: Button(action: {
+                             showingEditView = false
+                         }, label: {
+                             Text("Cancel")
+                         }),
+                             
+                         trailing: Button(action: {
+                             showingEditView = false
+                         }, label: {
+                             Text("Done")
+                         }))
+             }
+         }).onReceive(editPublisher) { updated in
+             renovationProject = updated
+         }
     }
 }
-
+    
 struct Header: View {
     let renovationProject: RenovationProject
     

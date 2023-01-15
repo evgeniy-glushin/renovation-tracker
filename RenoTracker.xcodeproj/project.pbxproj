@@ -23,6 +23,8 @@
 		CEE2972529731079008B3A88 /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = CEE2972429731079008B3A88 /* projects.json */; };
 		CEE2972729732B8F008B3A88 /* RenovationProjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2972629732B8F008B3A88 /* RenovationProjectExtensions.swift */; };
 		CEE29729297342F2008B3A88 /* PunchListItemExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE29728297342F2008B3A88 /* PunchListItemExtensions.swift */; };
+		CEE2972B29741E73008B3A88 /* PickerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2972A29741E73008B3A88 /* PickerTest.swift */; };
+		CEE2972D29742DC2008B3A88 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2972C29742DC2008B3A88 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		CEE2972429731079008B3A88 /* projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = projects.json; sourceTree = "<group>"; };
 		CEE2972629732B8F008B3A88 /* RenovationProjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProjectExtensions.swift; sourceTree = "<group>"; };
 		CEE29728297342F2008B3A88 /* PunchListItemExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchListItemExtensions.swift; sourceTree = "<group>"; };
+		CEE2972A29741E73008B3A88 /* PickerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTest.swift; sourceTree = "<group>"; };
+		CEE2972C29742DC2008B3A88 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +126,10 @@
 				CE7D573B296AED4400D13497 /* RenoTracker.entitlements */,
 				CE7D573C296AED4400D13497 /* Preview Content */,
 				CE7D5762296AF0E200D13497 /* DetailView.swift */,
+				CEE2972C29742DC2008B3A88 /* EditView.swift */,
 				CE705E6B296C6F8D0031D71F /* RenovationProjectRow.swift */,
 				CE705E6D296C85870031D71F /* RenovationProjectsView.swift */,
+				CEE2972A29741E73008B3A88 /* PickerTest.swift */,
 			);
 			path = RenoTracker;
 			sourceTree = "<group>";
@@ -313,10 +319,12 @@
 			files = (
 				CE7D5763296AF0E200D13497 /* DetailView.swift in Sources */,
 				CE705E6E296C85870031D71F /* RenovationProjectsView.swift in Sources */,
+				CEE2972D29742DC2008B3A88 /* EditView.swift in Sources */,
 				CE705E6C296C6F8D0031D71F /* RenovationProjectRow.swift in Sources */,
 				CEE2971E29730C29008B3A88 /* RenovationProjectDataService.swift in Sources */,
 				CEE2971B29730792008B3A88 /* RenovationProjectsPublisher.swift in Sources */,
 				CE7D5738296AED4300D13497 /* ContentView.swift in Sources */,
+				CEE2972B29741E73008B3A88 /* PickerTest.swift in Sources */,
 				CEE2972729732B8F008B3A88 /* RenovationProjectExtensions.swift in Sources */,
 				CEE29729297342F2008B3A88 /* PunchListItemExtensions.swift in Sources */,
 				CEE2972129730C60008B3A88 /* RenovationProject.swift in Sources */,
