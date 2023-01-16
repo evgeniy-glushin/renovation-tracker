@@ -9,7 +9,6 @@ struct DetailView: View {
     
     var body: some View {
         VStack (alignment: .leading) {
-            //Text(str)
             Header(renovationProject: renovationProject)
            
             WorkQuility(renovationProject: renovationProject)
@@ -28,23 +27,12 @@ struct DetailView: View {
          }))
          .sheet(isPresented: $showingEditView, content: {
              NavigationStack {
-                 EditView(renovationProject: $renovationProject, editPublisher: editPublisher)
-                     .navigationBarItems(
-                         leading: Button(action: {
-                             showingEditView = false
-                         }, label: {
-                             Text("Cancel")
-                         }),
-                             
-                         trailing: Button(action: {
-                             showingEditView = false
-                         }, label: {
-                             Text("Done")
-                         }))
+                 EditView(
+                    renovationProject: renovationProject,
+                    showingEditView: $showingEditView,
+                    editPublisher: editPublisher)
              }
-         }).onReceive(editPublisher) { updated in
-             renovationProject = updated
-         }
+         }).onReceive(editPublisher) { renovationProject = $0 }
     }
 }
     

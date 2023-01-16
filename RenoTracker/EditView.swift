@@ -3,19 +3,47 @@ import SwiftUI
 import Combine
 
 struct EditView: View {
-    @Binding var renovationProject: RenovationProject
+    @State var renovationProject: RenovationProject
+    @Binding var showingEditView: Bool
     var editPublisher: PassthroughSubject<RenovationProject, Never>
+     
     
     var body: some View {
         VStack {
-            Text("Hi from edit view")
+            Form {
+                Section("Project Info", content: {
+                    TextField("Renovation area", text: $renovationProject.renovationArea)
+                    
+                    DatePicker(
+                        selection: $renovationProject.dueDate,
+                        displayedComponents: .date,
+                        label: { Text("Pick date") })
+                    
+                    Picker(selection: $renovationProject.workQuality, label: Text("Work Quality Rating"), content: {
+                        ForEach(
+                            RenovationProject.WorkQualityRating.allCases.reversed(),
+                            id: \.rawValue,
+                            content: { Text($0.rawValue).tag($0) })
+                    })
+                    
+                    Toggle("Flagged for review", isOn: $renovationProject.isFlagged)
+                })
+            }
             
-            Button("publish", action: {
-                var new = renovationProject
-                new.isFlagged = !new.isFlagged
-                editPublisher.send(new)
-            })
         }
+        .navigationBarItems(
+            leading: Button(action: {
+                showingEditView = false
+            }, label: {
+                Text("Cancel")
+            }),
+                
+            trailing: Button(action: {
+                showingEditView = false
+                editPublisher.send(renovationProject)
+            }, label: {
+                Text("Done")
+            }))
     }
 }
 
@@ -24,7 +52,11 @@ struct EditView_Previews: PreviewProvider {
         @State private var testProject = RenovationProject.testData[1]
         
         var body: some View {
-            EditView(renovationProject: $testProject, editPublisher: PassthroughSubject<RenovationProject, Never>())
+            EditView(
+                renovationProject: testProject,
+                showingEditView: .constant(false),
+                editPublisher: PassthroughSubject<RenovationProject, Never>()
+            )
         }
     }
     
