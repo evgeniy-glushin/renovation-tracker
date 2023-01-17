@@ -18,7 +18,7 @@ struct DetailView: View {
             Divider()
             
             Budget(renovationProject: renovationProject)
-        }.navigationTitle("Front Lobby")
+        }.navigationTitle($renovationProject.renovationArea)
          .padding()
          .navigationBarItems(trailing: Button(action: {
              showingEditView = true

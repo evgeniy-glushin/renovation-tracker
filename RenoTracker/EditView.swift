@@ -29,7 +29,6 @@ struct EditView: View {
                     Toggle("Flagged for review", isOn: $renovationProject.isFlagged)
                 })
             }
-            
         }
         .navigationBarItems(
             leading: Button(action: {
