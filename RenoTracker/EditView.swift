@@ -28,6 +28,21 @@ struct EditView: View {
                     
                     Toggle("Flagged for review", isOn: $renovationProject.isFlagged)
                 })
+                
+                Section("Punch list", content: {
+                    ForEach(renovationProject.punchList, id: \.task, content: { punchListItem in
+                        let punchListItemIndex = renovationProject.punchList.firstIndex(where: {$0.task == punchListItem.task })!
+                        
+                        let punchListItemBinding = $renovationProject.punchList[punchListItemIndex]
+                        
+                        Picker(punchListItem.task, selection: punchListItemBinding.status) {
+                            Text("Not Started").tag(PunchListItem.CompletionStatus.notStarted)
+                            Text("In Progress").tag(PunchListItem.CompletionStatus.inProgress)
+                            Text("Complete").tag(PunchListItem.CompletionStatus.complete)
+                        }
+                        .pickerStyle(DefaultPickerStyle())
+                    })
+                })
             }
         }
         .navigationBarItems(
