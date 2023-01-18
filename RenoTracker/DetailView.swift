@@ -10,7 +10,7 @@ struct DetailView: View {
     var body: some View {
         VStack (alignment: .leading) {
             Header(renovationProject: renovationProject)
-           
+            
             WorkQuility(renovationProject: renovationProject)
             
             PunchList(renovationProject: renovationProject)

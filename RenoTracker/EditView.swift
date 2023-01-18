@@ -43,6 +43,14 @@ struct EditView: View {
                         .pickerStyle(DefaultPickerStyle())
                     })
                 })
+                
+                Section("Budget", content: {
+                    HStack {
+                        Text("Spent To-Date")
+                        TextField("Spent To_Date", value: $renovationProject.budgetSpentToDate, formatter: NumberFormatter())
+                            .multilineTextAlignment(.trailing)
+                    }
+                })
             }
         }
         .navigationBarItems(
